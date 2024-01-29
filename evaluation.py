@@ -6,7 +6,7 @@ import sys
 import torch
 import numpy as np
 
-from model.DECL import DECL
+from model.UGNCL import UGNCL
 from data import get_test_loader
 from vocab import deserialize_vocab
 from collections import OrderedDict
@@ -340,7 +340,7 @@ def validation_dul(opt, val_loader, models, fold=False):
         print("Sum of Recall: %.2f" % (r_sum))
         return r_sum
     else:
-        # 5fold cross-validation, only for MSCOCO
+        # 5fold cross-validation, only for MS-COCO
         results = []
         for i in range(5):
             img_embs_shard0_1 = img_embs0_1[i * 5000:(i + 1) * 5000:5]
@@ -394,7 +394,7 @@ def validation_dul(opt, val_loader, models, fold=False):
         print("rsum: %.1f" % (a[0:3].sum() + a[5:8].sum()))
 
 
-def eval_DECL(checkpoint_paths, avg_SGRAF=True, data_path=None, vocab_path=None):
+def eval_UGNCL(checkpoint_paths, avg_SGRAF=True, data_path=None, vocab_path=None):
     if avg_SGRAF is False:
         print(f"Load checkpoint from '{checkpoint_paths[0]}'")
         checkpoint = torch.load(checkpoint_paths[0])
@@ -406,7 +406,7 @@ def eval_DECL(checkpoint_paths, avg_SGRAF=True, data_path=None, vocab_path=None)
         if data_path != None:
             opt.data_path = data_path
         vocab = deserialize_vocab(os.path.join(opt.vocab_path, '%s_vocab.json' % opt.data_name))
-        model = DECL(opt)
+        model = UGNCL(opt)
         model.load_state_dict(checkpoint['model'])
         if 'coco' in opt.data_name:
             test_loader = get_test_loader('testall', opt.data_name, vocab, 100, 0, opt)
@@ -427,8 +427,8 @@ def eval_DECL(checkpoint_paths, avg_SGRAF=True, data_path=None, vocab_path=None)
             f"modules are {opt0.module_name} and {opt1.module_name}, best validation epochs are {checkpoint0['epoch']}"
             f" ({checkpoint0['best_rsum']}) and {checkpoint1['epoch']} ({checkpoint1['best_rsum']})")
         vocab = deserialize_vocab(os.path.join(vocab_path, '%s_vocab.json' % opt0.data_name))
-        model0 = DECL(opt0)
-        model1 = DECL(opt1)
+        model0 = UGNCL(opt0)
+        model1 = UGNCL(opt1)
 
         model0.load_state_dict(checkpoint0['model'])
         model1.load_state_dict(checkpoint1['model'])
