@@ -1,4 +1,4 @@
-<img width="891" alt="image" src="https://github.com/user-attachments/assets/b57958b5-578a-4158-b4a6-38e780af75dd"># UGNCL: Uncertainty-Guided Noisy Correspondence Learning for Effective Cross-Modal Matching
+# UGNCL: Uncertainty-Guided Noisy Correspondence Learning for Effective Cross-Modal Matching
 
 The pytorch implementation of UGNCL: Uncertainty-Guided Noisy Correspondence Learning for Effective Cross-Modal Matching
 
@@ -20,3 +20,6 @@ pages = {852–861},
 numpages = {10}
 }
 ```
+
+#Licence
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
