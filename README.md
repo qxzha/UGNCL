@@ -9,7 +9,7 @@ For the expand of UGCNL to journal, we wll open TRAINING CODE after it's accepte
 
 # Reference
 If UGNCL is useful for your research, please cite the following paper:
-...
+```
 @inproceedings{UGNCL,
 author = {Zha, Quanxing and Liu, Xin and Cheung, Yiu-ming and Xu, Xing and Wang, Nannan and Cao, Jianjia},
 title = {UGNCL: Uncertainty-Guided Noisy Correspondence Learning for Efficient Cross-Modal Matching},
@@ -19,4 +19,4 @@ booktitle = {Proceedings of the 47th International ACM SIGIR Conference on Resea
 pages = {852–861},
 numpages = {10}
 }
-...
+```
