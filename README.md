@@ -1,4 +1,4 @@
-# UGNCL: Uncertainty-Guided Noisy Correspondence Learning for Effective Cross-Modal Matching
+# UGNCL: Uncertainty-Guided Noisy Correspondence Learning for Efficient Cross-Modal Matching
 
 The pytorch implementation of UGNCL: Uncertainty-Guided Noisy Correspondence Learning for Effective Cross-Modal Matching
 
@@ -18,7 +18,7 @@ publisher = {Association for Computing Machinery},
 booktitle = {Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval},
 pages = {852–861},
 numpages = {10},
-doi = {https://doi.org/10.1145/3626772.3657806}
+doi = {10.1145/3626772.3657806}
 }
 ```
 
