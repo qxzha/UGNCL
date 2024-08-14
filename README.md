@@ -17,7 +17,8 @@ year = {2024},
 publisher = {Association for Computing Machinery},
 booktitle = {Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval},
 pages = {852–861},
-numpages = {10}
+numpages = {10},
+doi = {https://doi.org/10.1145/3626772.3657806}
 }
 ```
 
