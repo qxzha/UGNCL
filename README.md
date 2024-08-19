@@ -5,7 +5,7 @@ The pytorch implementation of [UGNCL: Uncertainty-Guided Noisy Correspondence Le
 We referred to the implementations of [NCR](https://github.com/XLearning-SCU/2021-NeurIPS-NCR) and [DECL](https://github.com/QinYang79/DECL) to build up our codebase.
 
 # Training shell
-For the expand of UGCNL to journal, we wll open TRAINING CODE after it's accepted.
+For the expanded version of UGCNL to journal, we will open TRAINING CODE after it's accepted.
 
 # Reference
 If UGNCL is useful for your research, please cite the following paper:
