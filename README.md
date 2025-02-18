@@ -1,5 +1,8 @@
 # [UGNCL: Uncertainty-Guided Noisy Correspondence Learning for Efficient Cross-Modal Matching](https://dl.acm.org/doi/10.1145/3626772.3657806)
 
+***Update***
+Note: the paper can be available here: [UGNCL](https://github.com/qxzha/UGNCL/blob/main/cr_UGNCL__Uncertainty_Guided_Noisy_Correspondence_Learning_for_Efficient_Cross_Modal_Matching.pdf)
+
 The pytorch implementation of [UGNCL: Uncertainty-Guided Noisy Correspondence Learning for Effective Cross-Modal Matching](https://dl.acm.org/doi/10.1145/3626772.3657806)
 
 We referred to the implementations of [NCR](https://github.com/XLearning-SCU/2021-NeurIPS-NCR) and [DECL](https://github.com/QinYang79/DECL) to build up our codebase.
