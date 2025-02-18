@@ -6,6 +6,8 @@ I would greatly appreciate your support!
 
 **Email**: [quanxing.zha@gmail.com](quanxing.zha@gmail.com)
 
+---
+
 ## Update
 - 2025.2.18: the paper can be available here: [UGNCL](https://github.com/qxzha/UGNCL/blob/main/cr_UGNCL__Uncertainty_Guided_Noisy_Correspondence_Learning_for_Efficient_Cross_Modal_Matching.pdf)
 
